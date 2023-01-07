@@ -1,0 +1,114 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Connor Schweighöfer</title>
+    <link rel="icon" href="images/profile-picture.png">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        window.onload = function() {
+            const ageElement = document.querySelector('[data-birthdate]');
+
+            if (ageElement) {
+                const birthdate = ageElement.getAttribute('data-birthdate');
+
+                const calculateAge = () => {
+                    const now = new Date();
+                    const birthdateArray = birthdate.split('-');
+                    const birthyear = parseInt(birthdateArray[0]);
+                    const birthmonth = parseInt(birthdateArray[1]);
+                    const birthday = parseInt(birthdateArray[2]);
+                    let age = now.getFullYear() - birthyear;
+
+                    if (now.getMonth() < birthmonth || (now.getMonth() === birthmonth && now.getDate() < birthday)) {
+                        age -= 1;
+                    }
+
+                    ageElement.innerHTML = `Software Developer | ${age} years old`;
+                };
+
+                calculateAge();
+            }
+        };
+
+    </script>
+</head>
+<body>
+<div class="container">
+    <div class="section">
+        <img src="images/profile-picture.png" alt="Profile Image" class="profile-image">
+        <div class="profile-info">
+            <h1>Connor Schweighöfer | SquidXTV</h1>
+            <p data-birthdate="2005-07-17">Software Developer | [Age] years old | &#127465&#127466</p>
+            <div class="profile-links">
+                <a href="https://github.com/SquidXTV">
+                    <img src="https://img.shields.io/badge/SquidXTV--blue?logo=github&style=social&link=https://github.com/SquidXTV" alt="GitHub Button">
+                </a>
+                <a href="mailto:squidxtv@gmail.com">
+                    <img src="https://img.shields.io/badge/SquidXTV-EA4335?style=flat&logo=gmail&logoColor=dfdfdf&link=mailto:squidxtv@gmail.com" alt="Email Button">
+                </a>
+                <a href="https://discord.com/users/565887697269293066">
+                    <img src="https://img.shields.io/badge/SquidXTV%231175-EA4335?style=flat&logo=discord&logoColor=ffffff&color=768BD5&link=https://discordapp.com/channels/@me/[Discord ID]" alt="Discord Button">
+                </a>
+            </div>
+
+        </div>
+    </div>
+    <div class="section">
+        <h2 class="section-title">About Me</h2>
+        <div class="section-content">
+            <p>
+                My name is Connor and I am a software developer with a
+                passion for creating innovative and user-friendly applications.
+            </p>
+            <p>
+                I am currently finishing my second to last year of <a href="https://www.gym-rinteln.de/">high school</a> and I am looking
+                forward to starting my studies in computer science in 2024. My main subjects in high school
+                are Math, Physics, and Chemistry, as I could not select computer science.
+                I am excited to continue learning and growing as a developer, and I am confident that
+                the education and opportunities at University will help me reach my full potential.
+            </p>
+            <p>
+                As a developer, I am skilled in a range of programming languages, including Java and Python. I
+                have experience working on backend development and Minecraft Plugins using Spigot and PaperMC.
+            </p>
+            <p>
+                Outside of school, I enjoy staying up-to-date with the latest trends and technologies in the field of
+                software development. I am an active member of several online developer communities including <a href="https://togetherjava.org/">Together Java Discord</a> and I regularly
+                attend industry events and conferences.
+            </p>
+            <p>
+                I am currently working on a bigger Minecraft Plugin called <a href="https://github.com/SquidXTV/FrameUI">FrameUI</a> and AuctionHouseUI.
+                I am also learning the Spring API in a learning backend project for a shop website.
+            </p>
+        </div>
+    </div>
+    <div class="section">
+        <h2 class="section-title">Skills</h2>
+        <div class="section-content">
+            <ul class="skills-list">
+                <li>
+                    <h3>Java</h3>
+                    <p>Expert</p>
+                </li>
+                <li>
+                    <h3>Python</h3>
+                    <p>Proficient</p>
+                </li>
+                <li>
+                    <h3>HTML</h3>
+                    <p>Proficient</p>
+                </li>
+                <li>
+                    <h3>CSS</h3>
+                    <p>Proficient</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>
