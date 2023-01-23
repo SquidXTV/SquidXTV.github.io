@@ -98,3 +98,15 @@ body {
 .profile-links a:hover {
     text-decoration: underline;
 }
+
+@media only screen and (max-width: 550px) {
+    .skills-list li {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 270px) {
+    .skills-list li {
+        width: 100%;
+    }
+}
