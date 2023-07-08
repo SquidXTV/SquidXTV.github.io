@@ -177,4 +177,14 @@ body {
     font-size: 1.2em;
 }
 
+footer {
+    background-color: #222;
+    color: #eee;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 5px 0;
+}
 
