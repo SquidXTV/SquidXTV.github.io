@@ -1,6 +1,6 @@
 window.onload = function() {
     const ageElement = document.querySelector('[data-birthdate]');
-    ageElement.textContent.replace("[Age]", calculateAge(ageElement).toString())
+    ageElement.textContent = ageElement.textContent.replace("[Age]", calculateAge(ageElement).toString())
 
     fetch('resources/projects.json')
         .then(value => value.json())
