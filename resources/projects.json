@@ -1,0 +1,21 @@
+[
+  {
+    "title": "FrameUI",
+    "description": "FrameUI is a library for creating GUIs in Minecraft using item frames and maps.",
+    "github": "https://github.com/SquidXTV/FrameUI",
+    "tech-stack": ["Java 17", "SpigotMC", "Maven", "JUnit 5", "Mockito", "ProtocolLib", "XML", "Schema"]
+  },
+  {
+    "title": "TJ-Bot",
+    "description": "TJ-Bot is a Discord Bot used on the Together Java server. It is maintained by the community, anyone can contribute.",
+    "github": "https://github.com/Together-Java/TJ-Bot",
+    "tech-stack": ["Java 17", "JDA", "Discord", "Gradle", "JUnit", "Mockito", "SonarQube", "Spotless", "SQLite", "Flyway", "jOOQ", "Log4j 2", "SLF4J"]
+  },
+  {
+    "title": "Thesis: Simulation of the Two-Body problem",
+    "description": "TwoBodySimulation is a simple simulation of two celestial bodies using the Euler method.",
+    "github": "https://github.com/SquidXTV/TwoBodyProblem",
+    "tech-stack": ["Java 17", "JavaFX", "Maven", "jPackage", "Thesis"]
+
+  }
+]

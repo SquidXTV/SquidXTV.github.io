@@ -110,3 +110,71 @@ body {
         width: 100%;
     }
 }
+
+
+
+.project-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+}
+
+.project-box {
+    background-color: #222;
+    color: #eee;
+    padding: 20px;
+    position: relative;
+    border: 5px solid #666;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+
+.project-title {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin: 0;
+}
+
+.project-github {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: -20px;
+}
+
+.project-github a {
+    display: flex;
+    align-items: center;
+    color: #eee;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.project-github img {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
+
+.project-tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.project-tech {
+    background-color: #666;
+    color: #eee;
+    font-size: 0.8em;
+    padding: 5px 10px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.project-description {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+
