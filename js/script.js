@@ -1,6 +1,9 @@
 window.onload = function() {
-    const ageElement = document.querySelector('[data-birthdate]');
-    ageElement.textContent = ageElement.textContent.replace("[Age]", calculateAge(ageElement).toString())
+    const age = calculateAge(17, 7, 2005)
+    const ageToReplace = document.querySelectorAll('.replace-age');
+    ageToReplace.forEach(function (element) {
+        element.textContent = element.textContent.replace("[Age]", age.toString())
+    })
 
     fetch('resources/projects.json')
         .then(value => value.json())
@@ -8,25 +11,16 @@ window.onload = function() {
         .catch(reason => console.log('Error fetching JSON data:', reason))
 };
 
-function calculateAge(ageElement) {
-    if (ageElement) {
-        const birthdate = ageElement.getAttribute('data-birthdate')
-        const now = new Date()
+function calculateAge(day, month, year) {
+    const now = new Date()
+    let age = now.getFullYear() - year
 
-        const dates = birthdate.split('-')
-        const day = parseInt(dates[0])
-        const month = parseInt(dates[1])
-        const year = parseInt(dates[2])
-        let age = now.getFullYear() - year
-
-        if (now.getMonth() < month || (now.getMonth() === month && now.getDate() < day)) {
-            age -= 1;
-        }
-
-        return age;
+    let currentMonth = now.getMonth() + 1
+    if (currentMonth < month || (currentMonth === month && now.getDate() < day)) {
+        age -= 1
     }
 
-    return -1;
+    return age;
 }
 
 function generateProjects(data) {

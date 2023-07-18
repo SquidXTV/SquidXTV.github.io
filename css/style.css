@@ -119,15 +119,15 @@ body {
     grid-gap: 20px;
 }
 
-.project-box {
-    background-color: #222;
-    color: #eee;
-    padding: 20px;
-    position: relative;
-    border: 5px solid #666;
-    border-radius: 8px;
-    margin-bottom: 20px;
-}
+/*.project-box {*/
+/*    background-color: #222;*/
+/*    color: #eee;*/
+/*    padding: 20px;*/
+/*    position: relative;*/
+/*    border: 5px solid #666;*/
+/*    border-radius: 8px;*/
+/*    margin-bottom: 20px;*/
+/*}*/
 
 
 .project-title {
@@ -164,8 +164,8 @@ body {
 }
 
 .project-tech {
-    background-color: #666;
-    color: #eee;
+    background-color: #616ec4;
+    color: #fff;
     font-size: 0.8em;
     padding: 5px 10px;
     margin-right: 5px;
@@ -176,6 +176,22 @@ body {
     margin-top: 10px;
     font-size: 1.2em;
 }
+
+.project-box {
+    background-color: #222;
+    color: #eee;
+    padding: 20px;
+    position: relative;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.75);
+    transition: transform 0.3s ease;
+}
+
+.project-box:hover {
+    transform: translateY(-5px);
+}
+
 
 footer {
     background-color: #222;
