@@ -30,31 +30,15 @@
 .section-content p {
     margin: 20px 0;
 }
+
 .section-content a {
     color: #3498db;
 }
+
 .section-content a:hover {
     text-decoration: none;
 }
-.skills-list {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-}
-.skills-list li {
-    width: 25%;
-    text-align: center;
-    margin-bottom: 20px;
-}
-.skills-list li h3 {
-    font-size: 1.5em;
-    margin: 10px 0;
-}
-.skills-list li p {
-    font-size: 1.2em;
-    color: #666;
-}
+
 .profile-image {
     width: 200px;
     height: 200px;
@@ -62,22 +46,27 @@
     margin: 0 auto;
     display: block;
 }
+
 .profile-info {
     text-align: center;
 }
+
 .profile-info h1 {
     font-size: 2.5em;
     margin: 20px 0;
 }
+
 .profile-info p {
     font-size: 1.2em;
     color: #666;
 }
+
 .profile-links {
     display: flex;
     justify-content: center;
     margin: 20px 0;
 }
+
 .profile-links a {
     display: block;
     margin: 0 5px;
@@ -85,23 +74,10 @@
     font-size: 1.2em;
     text-decoration: none;
 }
+
 .profile-links a:hover {
     text-decoration: underline;
 }
-
-@media only screen and (max-width: 550px) {
-    .skills-list li {
-        width: 50%;
-    }
-}
-
-@media only screen and (max-width: 270px) {
-    .skills-list li {
-        width: 100%;
-    }
-}
-
-
 
 .project-list {
     display: grid;

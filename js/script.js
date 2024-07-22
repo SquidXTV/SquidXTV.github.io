@@ -1,15 +1,14 @@
-window.onload = function() {
+document.addEventListener('DOMContentLoaded', () => {
     const age = calculateAge(17, 7, 2005)
-    const ageToReplace = document.querySelectorAll('.replace-age');
-    ageToReplace.forEach(function (element) {
-        element.textContent = element.textContent.replace("[Age]", age.toString())
+    document.querySelectorAll('.replace-age').forEach(function (element) {
+        element.innerHTML = element.innerHTML.replace("[Age]", age.toString());
     })
 
     fetch('resources/projects.json')
         .then(value => value.json())
         .then(data => generateProjects(data))
         .catch(reason => console.log('Error fetching JSON data:', reason))
-};
+})
 
 function calculateAge(day, month, year) {
     const now = new Date()
@@ -82,7 +81,6 @@ function generateProjects(data) {
     projectsSection.appendChild(projectTitle)
     projectsSection.appendChild(projectList)
 
-    const skills = document.querySelector('.skills')
-    container.insertBefore(projectsSection, skills)
+    container.append(projectsSection)
 
 }
