@@ -1,0 +1,12 @@
+@tailwind base;
+
+@layer base {
+    a {
+        @apply text-[#3498db];
+    }
+    a:hover {
+        @apply underline;
+    }
+}
+@tailwind components;
+@tailwind utilities;
