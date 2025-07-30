@@ -5,7 +5,7 @@ function AboutMe({age}: Readonly<{ age: number }>) {
         <div>
             <p className={'text-4xl font-bold text-center mb-4'}>About Me</p>
             <p className={'text-xl'}>
-                Hi, I'm Connor Schweighöfer, an {age}-year-old developer with around {age - 15} years of programming
+                Hi, I'm Connor Schweighöfer, a {age}-year-old developer with around {age - 15} years of programming
                 experience. My expertise lies in Java and backend development, but I've also worked on a variety
                 of projects including plugins, desktop, and frontend applications.
                 <br/><br/>
